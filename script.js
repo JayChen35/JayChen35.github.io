@@ -1,6 +1,6 @@
 window.onload = function() {
     // Set the target date and time for the countdown
-    var targetDate = new Date("2023-07-13T00:00:00");
+    var targetDate = new Date("2023-08-27T12:00:00");
     
     // Update the countdown every second
     setInterval(function() {
