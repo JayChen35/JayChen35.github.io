@@ -3478,9 +3478,9 @@ input, select, textarea {
 			content: '';
 			display: block;
 			height: 100%;
-			left: 0;
+			left: 10px;
 			position: absolute;
-			top: 0;
+			top: 10px;
 			width: 100%;
 		}
 
@@ -3488,7 +3488,7 @@ input, select, textarea {
 			display: inline-block;
 			margin-right: 1%;
 			max-width: 95%;
-			padding: 6em;
+			padding: 5em;
 			position: relative;
 			text-align: right;
 			vertical-align: middle;
@@ -4066,7 +4066,7 @@ input, select, textarea {
 			input[type="reset"],
 			input[type="button"],
 			.button {
-				padding: 0;
+				padding: 1;
 			}
 
 		/* Spotlight */

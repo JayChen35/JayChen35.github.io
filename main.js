@@ -71,11 +71,11 @@ Array(300).fill().forEach(addStar);
 const spaceTexture = new THREE.TextureLoader().load('/earth_render_4k.png');
 spaceTexture.colorSpace = THREE.SRGBColorSpace;
 const space = new THREE.Mesh(
-  new THREE.BoxGeometry(196,132,1),
+  new THREE.BoxGeometry(216,112,1),
   new THREE.MeshStandardMaterial({ map: spaceTexture })
 );
-space.translateZ(-200); space.translateX(-110);
-space.rotateY(Math.PI/6);
+space.translateZ(-120); space.translateX(40);
+space.rotateY(-Math.PI/5);
 scene.add(space);
 // scene.background = spaceTexture;
 // scene.background.colorSpace = THREE.SRGBColorSpace;
@@ -91,7 +91,7 @@ function moveCamera() {
   camera.position.z = t * -0.01;
   // camera.position.x = t * -0.0001;
   // camera.rotation.y = t * -0.0001;
-  torus.position.x = -20 + t * 0.07;
+  torus.position.x = 10 - t * 0.07;
   torus.position.y = -5 + t * 0.02;
   torus.position.z = -40 + t * 0.1;
 }
@@ -108,6 +108,7 @@ function animate() {
   // torus.rotation.z += 0.01;
 
   // controls.update();
+  // camera.lookAt(new THREE.Vector3( 40, 1, -120 ))
   renderer.render(scene, camera);
 }
 

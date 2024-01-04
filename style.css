@@ -2,21 +2,23 @@
 canvas {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0%;
 }
 
 main {
   width: 100vw;
   z-index: 99;
   position: absolute;
-  width: 100%;
+  width: 50%;
   margin: 0px auto;
   padding: 50px 50px;
+  padding-top: 300px;
   
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 10px;
 }
 
-section {
+/* section {
   grid-column: 7 / span 11;
-}
+} */
