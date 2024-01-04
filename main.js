@@ -1,6 +1,8 @@
-import './style.css';
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// DON'T just do import './style.css'
+// https://stackoverflow.com/questions/47403478/es6-modules-in-local-files-the-server-responded-with-a-non-javascript-mime-typ
+
+import * as THREE from "https://unpkg.com/three@0.160.0/build/three.module.js";
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 // Setup always requires a scene, camera, and renderer
 const scene = new THREE.Scene();
